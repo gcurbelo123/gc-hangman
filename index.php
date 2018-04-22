@@ -19,6 +19,9 @@
             </header>
             
             <div id="word"></div>
+            <div id = "hint">
+                <button class = "hintBtn btn btn-hint">Show Hint</button>
+            </div>
             <div id="letters"></div>
             
             <div id="won">

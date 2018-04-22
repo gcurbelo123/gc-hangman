@@ -22,6 +22,15 @@ $(".replayBtn").on("click", function() {
     location.reload();
 });
 
+$(".hintBtn").on("click", function() {
+    if(remainingGuesses!=0){
+        updateBoard();
+        $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>");
+        remainingGuesses--;
+        updateMan();
+        disableButton($(this));
+    }
+});
 
 function startGame() {
     pickWord();
@@ -57,7 +66,7 @@ function updateBoard() {
     }
     
     $("#word").append("<br />");
-    $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>")
+    
 }
 
 function updateWord(positions, letter) {

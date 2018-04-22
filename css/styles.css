@@ -20,10 +20,10 @@
 }
 
 .hint {
-    font-size: 0.6em !important;
+    font-size: 0.6em;
 }
 
 .btn {
-    padding: 7px 7px !important;
+    padding: 7px 7px;
     margin: 0px 2px;
 }
